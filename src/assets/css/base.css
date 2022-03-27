@@ -1,0 +1,77 @@
+:root {
+  --black-color: #000;
+  --light-grey: #999;
+  --main-color: #0070D1;
+  --white-color: #fff;
+  --light-black: #363636;
+  --light-text: rgb(31, 31, 31);
+  --grey: #666666;
+  --white-text: #f5f5f5;
+  --dark-purple: #26254F;
+  --button-c1: #A9ADB1;
+  --dark-blue: #00439c;
+  --button-c2: #D9DBDC;
+  --custom-banner-theme: rgb(0, 114, 206);
+  --firebrick: #cd3d0f;
+  --color: #000;
+  --color-bg: #000;
+  --bg-hits: unset;
+}
+
+@font-face {
+  font-family: 'SSTBold';
+  src: url('../fonts/SST-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SSTLight';
+  src: url('../fonts/SST-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SSTMedium';
+  src: url('../fonts/SST-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SSTRoman';
+  src: url('../fonts/SST-Roman.woff2') format('woff2');
+}
+
+@keyframes fadeUpContent {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeLayer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOpacityBannerV1 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
