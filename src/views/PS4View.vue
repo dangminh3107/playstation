@@ -12,6 +12,10 @@
     <BannerPlay :dataArr="dataArr.bannerPlay2" />
     <BannerHits :dataArr="dataArr.incredible" :sizeWidth="sizeWidth" />
     <Entertainment :dataArr="dataArr.entertainment" />
+    <Connect :dataArr="dataArr.connectBlock" />
+    <PS4Experience :dataArr="dataArr.experience" :sizeWidth="sizeWidth" />
+    <Family :dataArr="dataArr.family" />
+    <Section />
     <Footer />
   </div>
 </template>
@@ -27,6 +31,10 @@ import BannerHits from '../components/PS4View/BannerHits.vue';
 import BannerVR from '../components/BannerVR.vue';
 import BannerPlus from '../components/PS4View/BannerPlus.vue';
 import Entertainment from '../components/PS4View/Entertainment.vue';
+import Connect from '../components/PS4View/Connect.vue';
+import PS4Experience from '../components/PS4View/PS4Experience.vue';
+import Family from '../components/PS4View/Family.vue';
+import Section from '../components/PS4View/Section.vue';
 import Footer from '../components/Footer.vue';
 
 export default {
@@ -42,6 +50,10 @@ export default {
     BannerVR,
     BannerPlus,
     Entertainment,
+    Connect,
+    PS4Experience,
+    Family,
+    Section,
     Footer,
   },
   created() {
@@ -170,6 +182,78 @@ export default {
             "Discover the biggest and best movies, TV shows, video streaming services and all the world's music from your PS4 home screen4.",
           image: 'banner_7/img_1.jpg',
           contentBtn: 'Discover entertainment on PS4',
+        },
+        connectBlock: {
+          title: 'Connect to your gaming world',
+          subTitle: 'The freedom to play, share and socialise with millions of players worldwide.',
+          remoteTitle: 'Remote Play',
+          remoteSubTitle:
+            'Stream games from your PS4 to any compatible iOS or Android device, PC, Mac, PlayStation Vita over your home WiFi network, and enjoy freedom from your TV.',
+          remoteBtn: 'Learn more',
+          remoteImg: 'banner_8/img_1.jpg',
+          list: [
+            {
+              title: 'Share Play',
+              image: 'banner_8/img_2.jpg',
+              overview:
+                'Let a friend play your games or join in multiplayer matches, even if they don’t own the game.',
+            },
+            {
+              title: 'Stream your gameplay',
+              image: 'banner_8/img_3.jpg',
+              overview: 'Broadcast your adventures live to the world via Twitch and  YouTube.',
+            },
+            {
+              title: 'Share in seconds',
+              image: 'banner_8/img_4.jpg',
+              overview:
+                'Share screenshots and videos of your greatest moments on Twitter and YouTube.',
+            },
+            {
+              title: 'Connect with friends',
+              image: 'banner_8/img_5.jpg',
+              overview:
+                'Create parties, chat to friends or join gaming communities to find new players.',
+            },
+          ],
+          btn: 'The PlayStation guide to sharing',
+        },
+        experience: {
+          title: 'Great experiences that stay with you on PS4™ and PS5™',
+          overview:
+            'Discover some of the games, features and experiences that unite PS4 and PS5 consoles, and how the power of PlayStation®5 lets you push the boundaries of play.',
+          image: 'banner_9/img_1.jpg',
+          background: 'banner_9/img_2.jpg',
+          backgroundMobile: 'banner_9/img_3.jpg',
+          btn: 'Find out more',
+        },
+        family: {
+          title: 'PS4 for the whole family',
+          overview:
+            'With versatile parental controls designed to give you peace of mind, plus a whole universe of games suitable for everyone, PS4 is suitable for the entire family.',
+          list: [
+            {
+              image: 'banner_10/img_1.jpg',
+              title: 'Parental controls on PS4',
+              overview:
+                'Parental controls on PS4 let you tailor what each individual child family member can access on their console, and how long they can play each day.',
+              btn: 'Full details',
+            },
+            {
+              image: 'banner_10/img_2.jpg',
+              title: 'A parent’s guide to PlayStation',
+              overview:
+                "Learn more about what we do to keep young players as safe as possible – and what you can do to make sure they're playing in ways that are suitable for their age group.",
+              btn: 'Find out more',
+            },
+          ],
+          new: {
+            image: 'banner_10/img_3.jpg',
+            title: 'New to PS4?',
+            overview:
+              'Find everything you need to know to make the most of your PS4 in our new user guide.',
+            btn: 'PS4 new user guide',
+          },
         },
       },
     };

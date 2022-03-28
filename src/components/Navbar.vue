@@ -73,7 +73,7 @@
           <font-awesome-icon icon="fa-solid fa-magnifying-glass" class="icon" />
         </div>
       </div>
-      <div :class="['expand-wrapper', isShow ? 'active' : '']">
+      <div :class="['expand-wrapper', isShow ? 'active' : '']" ref="expandRef">
         <div class="icon-control-close" @click="closeExpand">
           <font-awesome-icon icon="fa-solid fa-arrow-right" class="icon" />
         </div>
